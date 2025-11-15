@@ -1,5 +1,5 @@
 GDrive Link of Video: (TBA)
 
 Contributors:
-Alexander Yu
+Alexander Yu,
 Sean Kyle Undag
