@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class UserData
@@ -123,6 +124,7 @@ public class LocalAuthManager : MonoBehaviour
                 PrintFeedback("Login Success!", 1.2f, Color.green);
                 User = user.username;
                 isAuthenticated = true;
+                LoadMainScene();
                 return true;
             }
         }
@@ -149,8 +151,8 @@ public class LocalAuthManager : MonoBehaviour
         return User;
     }
 
-    void RemoveFeedback()
+    void LoadMainScene()
     {
-        //feedbackText.text = "";
+        SceneManager.LoadScene(1);
     }
 }
